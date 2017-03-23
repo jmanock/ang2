@@ -1,0 +1,10 @@
+{
+  "name":"myFriendMike",
+  "version":"0.0.33",
+  "scripts":{
+    "start":"Node server.js"
+  },
+  "dependencies":{
+    "express":"latest"
+  }
+}
