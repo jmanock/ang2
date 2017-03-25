@@ -1,10 +1,12 @@
 {
-  "name":"myFriendMike",
-  "version":"0.0.33",
+  "name":"maybeThisWillWork",
+  "version":"0.0.100",
+  "private":true,
   "scripts":{
-    "start":"Node server.js"
+    "start":"node app.js"
   },
   "dependencies":{
-    "express":"latest"
+    "express":"3.4.8",
+    "jade":"*"
   }
 }
