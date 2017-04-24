@@ -1,0 +1,31 @@
+<div class="container">
+<h1>Testing a New way to Find my Friends!!</h1>
+<input type="file" name='file' id='file'>
+</div>
+<script>
+document.getElementById('file').onchange = function(){
+
+var file = this.files[0];
+
+var reader = new FileReader();
+reader.onload = function(progressEvent){
+  // Entire file
+  //console.log(this.result);
+
+  // By lines
+  var lines = this.result.split('\n');
+  // for(var line = 0; line < lines.length; line++){
+  //   console.log(lines[1]);
+  // }
+  /*
+    ~ every line needs to be split into different cats
+    ~ make header for each cat
+    ~ Sem = 300k
+    ~ Orange = 840k
+    ~ Try to edit down what I need to get back
+  */
+  console.log(lines.length);
+};
+reader.readAsText(file);
+};
+</script>
