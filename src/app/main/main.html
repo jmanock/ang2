@@ -14,9 +14,6 @@ reader.onload = function(progressEvent){
 
   // By lines
   var lines = this.result.split('\n');
-  // for(var line = 0; line < lines.length; line++){
-  //   console.log(lines[1]);
-  // }
   /*
     ~ every line needs to be split into different cats
     ~ make header for each cat
@@ -24,7 +21,13 @@ reader.onload = function(progressEvent){
     ~ Orange = 840k
     ~ Try to edit down what I need to get back
   */
-  console.log(lines.length);
+  var count = 0;
+  for(var i = 0; i<lines.length; i++){
+    if(lines[i].includes('@')){
+      count++;
+    }
+    console.log(count);
+  }
 };
 reader.readAsText(file);
 };
